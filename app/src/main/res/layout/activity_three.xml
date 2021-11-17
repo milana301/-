@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThreeActivity">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="260dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:text="@string/regiiist"
+        style="@style/text_view_style3"/>
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="120dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="100dp"
+    style="@style/text_view_style5"
+    android:text="@string/voitiii"/>
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout4"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="60dp"
+android:orientation="vertical"
+app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent">
+
+
+<EditText
+    android:id="@+id/textView"
+    android:layout_width="320dp"
+    android:layout_height="48dp"
+    android:layout_marginBottom="25dp"
+    android:hint="@string/pochta"
+    android:textColor="#6A6868"
+    android:textSize="18sp" />
+
+<EditText
+    android:id="@+id/textView10"
+    android:layout_width="320dp"
+    android:layout_height="48dp"
+    android:hint="@string/password"
+    android:textColor="#6A6868"
+    android:textSize="18sp" />
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginBottom="60dp"
+android:orientation="vertical"
+android:gravity="center"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent">
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="30dp"
+    style="@style/text_view_style4"
+    android:text="@string/zabparol"/>
+
+<Button
+    android:id="@+id/button8"
+    android:layout_width="270dp"
+    android:layout_height="57dp"
+    android:background="@color/green"
+    android:textAllCaps="false"
+    android:text="@string/voitti"
+    android:textSize="24sp"
+    style="@style/text_view_style"
+    app:layout_constraintBottom_toTopOf="@+id/button1"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
